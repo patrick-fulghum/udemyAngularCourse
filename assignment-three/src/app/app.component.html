@@ -1,0 +1,23 @@
+<div class='container'>
+  <h1 text-align='center'>{{ title }}</h1>
+  <button class="btn btn-primary" (click)="onToggle()">
+    Display the best Books
+  </button>
+  <ul *ngIf="displayBooks">
+    <li>
+      The Stand
+    </li>
+    <li>
+      Ready Player One
+    </li>
+    <li>
+      The Saxon Stories
+    </li>
+    <li>
+      Deadzone
+    </li>
+  
+  </ul>
+  <app-my-logger *ngFor="let log of logs"></app-my-logger>
+</div>
+

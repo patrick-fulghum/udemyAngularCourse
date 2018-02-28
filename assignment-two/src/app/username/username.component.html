@@ -1,5 +1,18 @@
-<input [(ngModel)]="username">
-<p>
-  {{ username }}
-</p>
-<button class="btn btn-primary" [disabled]="usernameIsEmpty()" (click)="clearUsername()"></button>
+<div class="container">
+  <div class="row">
+    <div class=col-xs-12>
+      <label>Username</label>
+      <input [(ngModel)]="username">
+      <p>
+        {{ username }}
+      </p>
+      <button
+      class="btn btn-primary"
+      [disabled]="usernameIsEmpty()"
+      (click)="clearUsername()">
+      Clear Username
+    </button>
+
+    </div>
+  </div>
+</div>
